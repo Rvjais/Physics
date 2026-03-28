@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description"
+		content="Home tuition and online classes for Physics 10th, 11th, 12th, JEE and NEET provided by Himanshu Sir. Focus on clearing individual doubts." />
+	<meta name="keywords" content="physics online classes, home tuition physics, physics tuition services" />
+	<title>Home Tuition &amp; Online Physics Classes | Himanshu Sir</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16.png" />
+	<link rel="stylesheet" href="../assets/css/style.css" />
+	<style>
+		.service-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 24px;
+			margin-top: 32px;
+		}
+
+		@media(max-width:768px) {
+			.service-grid {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		.service-card {
+			background: #fff;
+			border: 1px solid var(--border);
+			border-radius: var(--radius-lg);
+			padding: 32px;
+			box-shadow: var(--shadow-sm);
+			transition: var(--transition);
+		}
+
+		.service-card:hover {
+			border-color: rgba(37, 99, 235, 0.3);
+			transform: translateY(-3px);
+			box-shadow: var(--shadow);
+		}
+
+		.service-card .icon {
+			font-size: 36px;
+			margin-bottom: 16px;
+		}
+
+		.service-card h3 {
+			font-size: 19px;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+
+		.service-card p {
+			font-size: 14px;
+			color: var(--text-muted);
+			line-height: 1.7;
+			margin-bottom: 16px;
+		}
+
+		.feature-row {
+			display: flex;
+			flex-direction: column;
+			gap: 14px;
+			margin-top: 28px;
+		}
+
+		.feature-row-item {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			font-size: 14px;
+			color: var(--text-muted);
+		}
+
+		.feature-row-item::before {
+			content: '✓';
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-shrink: 0;
+			width: 24px;
+			height: 24px;
+			background: var(--primary-light);
+			color: var(--primary);
+			border-radius: 50%;
+			font-size: 12px;
+			font-weight: 700;
+		}
+
+		.banner {
+			background: linear-gradient(135deg, var(--primary-light), var(--accent-light));
+			border: 1px solid rgba(37, 99, 235, 0.15);
+			border-radius: var(--radius-lg);
+			padding: 32px 36px;
+			margin-top: 24px;
+			display: flex;
+			align-items: center;
+			gap: 24px;
+		}
+
+		.banner-icon {
+			font-size: 40px;
+			flex-shrink: 0;
+		}
+
+		.banner h3 {
+			font-size: 18px;
+			font-weight: 700;
+			margin-bottom: 6px;
+		}
+
+		.banner p {
+			font-size: 14px;
+			color: var(--text-muted);
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navbar" id="navbar">
+		<div class="container">
+			<div class="nav-inner">
+				<a href="../index.html" class="nav-logo">
+					<img src="../assets/animations/abstract-atom.gif" alt="Logo" />
+					<span class="nav-logo-text">Learn with<br /><span>Himanshu Sir</span></span>
+				</a>
+				<ul class="nav-links">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="home-tuition.html">About</a></li>
+					<li class="nav-dropdown">
+						<span>Classes ▾</span>
+						<div class="nav-dropdown-menu">
+							<a href="syllabus.html">10th Physics</a>
+							<a href="physics-home-tuition.html">11th Physics</a>
+							<a href="12th-physics.html">12th Physics</a>
+							<a href="jee-mains.html">JEE Mains &amp; Advanced</a>
+							<a href="neet.html">NEET Physics</a>
+							<a href="online-classes.html" style="color:var(--primary);">Online Classes</a>
+						</div>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<a href="https://wa.me/918527158702" class="btn btn-primary nav-cta" target="_blank" rel="noopener">📞
+					WhatsApp Us</a>
+				<button class="nav-hamburger" id="hamburger"
+					aria-label="Open menu"><span></span><span></span><span></span></button>
+			</div>
+		</div>
+	</nav>
+
+	<div class="mobile-nav" id="mobileNav">
+		<button class="mobile-nav-close" id="mobileClose">✕</button>
+		<a href="../index.html">Home</a>
+		<a href="home-tuition.html">About</a>
+		<details>
+			<summary>Classes</summary>
+			<div>
+				<a href="syllabus.html">10th Physics</a>
+				<a href="physics-home-tuition.html">11th Physics</a>
+				<a href="12th-physics.html">12th Physics</a>
+				<a href="jee-mains.html">JEE Mains &amp; Advanced</a>
+				<a href="neet.html">NEET Physics</a>
+				<a href="online-classes.html">Online Classes</a>
+			</div>
+		</details>
+		<a href="contact.html">Contact</a>
+	</div>
+
+	<section class="page-hero">
+		<div class="page-hero-deco"></div>
+		<div class="container">
+			<div class="page-hero-content">
+				<span class="section-tag">Our Services</span>
+				<h1 class="section-title">Home Tuition &amp; <span>Online Physics Classes</span></h1>
+				<p class="section-subtitle">High-quality physics education for 10th, 11th, 12th, JEE and NEET —
+					delivered at your home or online. Our main focus is clearing individual student doubts for better
+					performance.</p>
+				<div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+					<a href="contact.html" class="btn btn-primary">Enquire Now</a>
+					<a href="https://wa.me/918527158702" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp
+						Us</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+
+			<div class="content-card">
+				<span class="section-tag">Delivery Modes</span>
+				<h2 class="section-title" style="font-size:28px;">Choose How You Learn</h2>
+				<div class="service-grid">
+					<div class="service-card">
+						<div class="icon">🏠</div>
+						<h3>Home Tuition (In-Person)</h3>
+						<p>Himanshu Sir visits you at home for one-to-one sessions. Best for students who benefit from
+							in-person interaction and a distraction-free environment.</p>
+						<div class="feature-row">
+							<div class="feature-row-item">Personal, face-to-face guidance</div>
+							<div class="feature-row-item">Flexible scheduling around your timetable</div>
+							<div class="feature-row-item">Board-specific materials provided</div>
+						</div>
+					</div>
+					<div class="service-card">
+						<div class="icon">💻</div>
+						<h3>Online Classes (Pan India)</h3>
+						<p>Interactive online sessions via video call — same quality as home tuition. Available to
+							students anywhere across India.</p>
+						<div class="feature-row">
+							<div class="feature-row-item">Live interactive video sessions</div>
+							<div class="feature-row-item">Digital worksheets &amp; resources shared</div>
+							<div class="feature-row-item">Session recordings available on request</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-card">
+				<span class="section-tag">Classes Available</span>
+				<h2 class="section-title" style="font-size:28px;">Classes We Offer</h2>
+				<div
+					style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:20px;">
+					<a href="syllabus.html"
+						style="background:var(--primary-light);border:1px solid rgba(37,99,235,0.2);border-radius:10px;padding:16px;text-align:center;font-weight:700;color:var(--primary);transition:var(--transition);"
+						onmouseover="this.style.background='var(--primary)';this.style.color='#fff'"
+						onmouseout="this.style.background='var(--primary-light)';this.style.color='var(--primary)'">🔟
+						10th Physics</a>
+					<a href="physics-home-tuition.html"
+						style="background:var(--primary-light);border:1px solid rgba(37,99,235,0.2);border-radius:10px;padding:16px;text-align:center;font-weight:700;color:var(--primary);transition:var(--transition);"
+						onmouseover="this.style.background='var(--primary)';this.style.color='#fff'"
+						onmouseout="this.style.background='var(--primary-light)';this.style.color='var(--primary)'">⚡
+						11th Physics</a>
+					<a href="12th-physics.html"
+						style="background:var(--primary-light);border:1px solid rgba(37,99,235,0.2);border-radius:10px;padding:16px;text-align:center;font-weight:700;color:var(--primary);transition:var(--transition);"
+						onmouseover="this.style.background='var(--primary)';this.style.color='#fff'"
+						onmouseout="this.style.background='var(--primary-light)';this.style.color='var(--primary)'">🎓
+						12th Physics</a>
+					<a href="jee-mains.html"
+						style="background:var(--primary-light);border:1px solid rgba(37,99,235,0.2);border-radius:10px;padding:16px;text-align:center;font-weight:700;color:var(--primary);transition:var(--transition);"
+						onmouseover="this.style.background='var(--primary)';this.style.color='#fff'"
+						onmouseout="this.style.background='var(--primary-light)';this.style.color='var(--primary)'">🏆
+						JEE Physics</a>
+					<a href="neet.html"
+						style="background:var(--primary-light);border:1px solid rgba(37,99,235,0.2);border-radius:10px;padding:16px;text-align:center;font-weight:700;color:var(--primary);transition:var(--transition);"
+						onmouseover="this.style.background='var(--primary)';this.style.color='#fff'"
+						onmouseout="this.style.background='var(--primary-light)';this.style.color='var(--primary)'">🧬
+						NEET Physics</a>
+				</div>
+			</div>
+
+			<div class="banner">
+				<div class="banner-icon">🎯</div>
+				<div>
+					<h3>Our Focus: Individual Doubt Clearing</h3>
+					<p>Performance increases when individual doubts are cleared. Each session is structured to address
+						the specific weak areas of the student — not a generic lecture.</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="footer-inner">
+				<div class="footer-brand">
+					<div style="display:flex;align-items:center;gap:10px;">
+						<img src="../assets/animations/abstract-atom.gif" alt="Logo"
+							style="width:36px;height:36px;border-radius:50%;" />
+						<span class="footer-logo-text">Learn with <span>Himanshu Sir</span></span>
+					</div>
+					<p>Expert physics home tuition and online classes for 10th, 11th, 12th, JEE and NEET students across
+						India.</p>
+				</div>
+				<div class="footer-col">
+					<h4>Classes</h4>
+					<ul>
+						<li><a href="syllabus.html">10th Physics</a></li>
+						<li><a href="physics-home-tuition.html">11th Physics</a></li>
+						<li><a href="12th-physics.html">12th Physics</a></li>
+						<li><a href="jee-mains.html">JEE Mains &amp; Advanced</a></li>
+						<li><a href="neet.html">NEET Physics</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Links</h4>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="home-tuition.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom"><span>© 2026 Physics Tuition by Himanshu Sir.</span><span>📱 8527158702</span>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		const navbar = document.getElementById('navbar');
+		window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 40));
+		const hamburger = document.getElementById('hamburger');
+		const mobileNav = document.getElementById('mobileNav');
+		const mobileClose = document.getElementById('mobileClose');
+		hamburger.addEventListener('click', () => { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; });
+		mobileClose.addEventListener('click', () => { mobileNav.classList.remove('open'); document.body.style.overflow = ''; });
+		mobileNav.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { mobileNav.classList.remove('open'); document.body.style.overflow = ''; }));
+	</script>
+</body>
+
+</html>
